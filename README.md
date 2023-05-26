@@ -1,3 +1,16 @@
+<ol>
+  <li>Clone repositori.</li>
+  <li>Install dependensi menggunakan `composer install`.</li>
+  <li>Siapkan variabel lingkungan dengan membuat file `.env` di folder aplikasi berdasarkan file `.env.example`. Anda dapat melakukannya dengan menjalankan perintah `copy .env.example .env` atau `cp .env.example .env` untuk pengguna Linux.</li>
+  <li>Generate kunci aplikasi menggunakan `php artisan key:generate`.</li>
+  <li>Jika aplikasi Laravel menggunakan database, buat database baru dan perbarui nama database, username, dan password di file `.env`.</li>
+  <li>Jalankan `php artisan migrate` untuk menghasilkan tabel-tabel database.</li>
+  <li>Jika aplikasi menyediakan seeder untuk tabel-tabel database, jalankan `php artisan db:seed` untuk mengisi tabel-tabel dengan data.</li>
+  <li>Akhirnya, jalankan server pengembangan lokal menggunakan `php artisan serve` dan akses aplikasi melalui http://localhost:8000/category.</li>
+</ol>
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
