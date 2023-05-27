@@ -15,10 +15,11 @@
                         <span class="text-danger" id="error-name"></span>
                     </div>
                     <div class="form-group">
-                        <label for="description">Description</label> 
-                        <textarea class="form-control" name="description" id="description" rows="5" class="form-control" required autofocus></textarea>
+                        <label for="description">Description</label>
+                        <textarea class="form-control" name="description" id="description" rows="5" required autofocus></textarea>
                         <span class="text-danger" id="error-description"></span>
                     </div>
+
 
                 </div>
                 <div class="modal-footer">
@@ -32,6 +33,6 @@
 
 <script>
     function cancelAction() {
-        window.location.href = '/category'; 
+        window.location.href = '/category';
     }
 </script>
