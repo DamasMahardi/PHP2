@@ -168,12 +168,20 @@
             if (!data.name) {
                 formIsValid = false;
                 $("#error-name").text('Kolom nama harus diisi.');
+
             } else if (/\d/.test(data.name)) {
                 formIsValid = false;
                 $("#error-name").text('Kolom nama tidak boleh mengandung angka.');
             } else if (data.name.length < 5 || data.name.length > 10) {
                 formIsValid = false;
                 $("#error-name").text('Kolom nama harus terdiri dari 5 hingga 10 huruf.');
+            } else if (!data.description) {
+                formIsValid = false;
+                $("#error-description").text('Kolom description harus diisi.');
+
+            } else if (data.description.length < 10 || data.description.length > 20) {
+                formIsValid = false;
+                $("#error-description").text('Kolom nama harus terdiri dari 10 hingga 20 huruf.');
             }
 
             return formIsValid;
