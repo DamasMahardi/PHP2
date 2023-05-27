@@ -64,11 +64,10 @@ class categoryController extends Controller
     }
 
     // 1. Buat fungsi di dalam controller yang akan menangani klik tombol "Cancel"
-public function cancelAction()
-{
-    // Lakukan aksi yang diinginkan saat tombol "Cancel" diklik
-    // Misalnya, redirect ke halaman tertentu atau melakukan perubahan data
-    return redirect()->route('category')->with('message', 'Tombol Cancel diklik');
-}
-
+    public function cancelAction()
+    {
+        // Lakukan aksi yang diinginkan saat tombol "Cancel" diklik
+        // Misalnya, redirect ke halaman tertentu atau melakukan perubahan data
+        return redirect()->route('category')->with('message', 'Tombol Cancel diklik');
+    }
 }

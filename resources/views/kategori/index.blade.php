@@ -164,12 +164,21 @@
         function validation(data) {
             let formIsValid = true;
             $('span[id^="error"]').text('');
+
             if (!data.name) {
                 formIsValid = false;
-                $("#error-name").text('The name field is required.')
+                $("#error-name").text('Kolom nama harus diisi.');
+            } else if (/\d/.test(data.name)) {
+                formIsValid = false;
+                $("#error-name").text('Kolom nama tidak boleh mengandung angka.');
+            } else if (data.name.length < 5 || data.name.length > 10) {
+                formIsValid = false;
+                $("#error-name").text('Kolom nama harus terdiri dari 5 hingga 10 huruf.');
             }
+
             return formIsValid;
         }
+
 
         function submitHandler() {
             $('#saveBtn').click();
